@@ -26,7 +26,7 @@ mongoose.connect('mongodb+srv://userttest:admin123@cluster0.uyhgfbq.mongodb.net/
             const novoPedido = {
                 orderId: body.numeroPedido,
                 value: body.valorTotal,
-                creationDate: bodyCriacao,
+                creationDate: body.dataCriacao,
                 items: body.items.map(item => {
                     return {
                         productId: Number(item.idItem),
