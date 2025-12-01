@@ -4,8 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/desafio_pedidos')
-    .then(() => console.log(' conectado'))
+mongoose.connect('mongodb+srv://userttest:admin123@cluster0.uyhgfbq.mongodb.net/desafio_pedidos?appName=Cluster0')
     .catch(err => console.log(err));
 
 
